@@ -10,17 +10,18 @@
     <div class="container">
         
             <h1> Antony Cao</h1> 
-<script>
-    fetch("https://visit-counter.YOUR_SUBDOMAIN.workers.dev")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("visitor-count").innerText = data;
-      })
-      .catch(err => {
-        console.error("Error fetching visitor count:", err);
-        document.getElementById("visitor-count").innerText = "Error";
-      });
-  </script>
+
+        <script>
+            fetch("https://visit-counter.antonanalt.workers.dev/")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("visitor-count").innerText = data;
+                })
+                .catch(err => {
+                    console.error("Error fetching visitor count:", err);
+                    document.getElementById("visitor-count").innerText = "Error";
+                });
+        </script>
         
         <div>
         <h1>About Me</h1>  
